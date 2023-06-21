@@ -1,34 +1,38 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "fmc",
 	"version": "${version}",
 	"name": "Example mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Lafolie"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+		"homepage": "https://github.com/Lafolie/fmc/wiki",
+		"sources": "https://github.com/Lafolie/fmc",
+		"issues": "https://github.com/Lafolie/fmc/issues"
+	  },
+
+	"license": "LGPL-2.0-only",
+	"icon": "assets/fmc/icon.png",
+
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"lafolie.fmc.FMC"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"lafolie.fmc.FMCClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"fmc.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "fmc.client.mixins.json",
 			"environment": "client"
 		}
 	],
+
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
@@ -36,6 +40,14 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
-	}
+		"another-mod": "*",
+		"modmenu": "*",
+		"immediatelyfast": "*"
+	},
+
+	"modmenu": {
+		"links": {
+		  "modmenu.discord": "https://discord.gg/???"
+		}
+	  }
 }

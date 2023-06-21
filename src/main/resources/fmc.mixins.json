@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "lafolie.fmc.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"client": [
-		"ExampleClientMixin"
+	"mixins": [
+
 	],
 	"injectors": {
 		"defaultRequire": 1
