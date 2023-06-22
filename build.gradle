@@ -1,4 +1,5 @@
-plugins {
+plugins
+{
 	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
 }
@@ -6,31 +7,60 @@ plugins {
 version = project.mod_version
 group = project.maven_group
 
-base {
+base
+{
 	archivesName = project.archives_base_name
 }
 
-repositories {
+repositories
+{
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	// Modmenu
+	maven { url "https://maven.terraformersmc.com/releases/" }
+
+	// cardinal components
+	maven
+	{
+		name = "Ladysnake Mods"
+		url = 'https://ladysnake.jfrog.io/artifactory/mods'
+	}
+
+	// YACL
+	maven
+	{
+		name 'Xander Maven'
+		url "https://maven.isxander.dev/releases"
+	}
+
+	// snakeYAML
+	maven { url "https://oss.sonatype.org/content/groups/public/" }
+
+	// geckolib
+	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+
 }
 
-loom {
-    splitEnvironmentSourceSets()
+loom
+{
+	splitEnvironmentSourceSets()
 
-    mods {
-        "fmc" {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
-    }
+	mods {
+		"fmc"
+		{
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
 
 }
 
-dependencies {
+dependencies
+{
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -43,21 +73,45 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
+	// Mod Menu
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+	{
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+
+	// Cardinal Components
+	// Replace modImplementation with modApi if you expose components in your own API
+	modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-api:${project.cardinal_components_version}"
+
+	// YAML
+ 	implementation("org.yaml:snakeyaml:${snakeyaml_version}")
+
+	// YACL (config lib)
+	modImplementation "dev.isxander.yacl:yet-another-config-lib-fabric:${project.yacl_version}"
+
+	// Geckolib
+	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${project.geckolib_version}"
+
 }
 
-processResources {
+processResources
+{
 	inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
+	filesMatching("fabric.mod.json")
+	{
 		expand "version": project.version
 	}
 }
 
-tasks.withType(JavaCompile).configureEach {
+tasks.withType(JavaCompile).configureEach
+{
 	it.options.release = 17
 }
 
-java {
+java
+{
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.
 	// If you remove this line, sources will not be generated.
@@ -67,22 +121,27 @@ java {
 	targetCompatibility = JavaVersion.VERSION_17
 }
 
-jar {
+jar
+{
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
 	}
 }
 
 // configure the maven publication
-publishing {
-	publications {
-		mavenJava(MavenPublication) {
+publishing
+{
+	publications
+	{
+		mavenJava(MavenPublication)
+		{
 			from components.java
 		}
 	}
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {
+	repositories
+	{
 		// Add repositories to publish to here.
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
