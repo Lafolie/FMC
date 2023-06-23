@@ -1,7 +1,11 @@
 package lafolie.fmc.element;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.EnumMap;
+import java.util.EnumSet;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public enum ElementalAspect
@@ -24,6 +28,7 @@ public enum ElementalAspect
 	private static final Map<ElementalAspect, ElementalAspect> RESIST = new EnumMap<>(ElementalAspect.class);
 	private static final Map<ElementalAspect, String> LANG_KEYS = new EnumMap<>(ElementalAspect.class);
 	private static final Map<String, ElementalAspect> NBT_KEYS = new HashMap<>();
+	private static ArrayList<ElementalAspect> randomList = new ArrayList<>();
 
 	static
 	{
@@ -74,10 +79,84 @@ public enum ElementalAspect
 		LANG_KEYS.put(ElementalAspect.DARK, "fmc.core.element.tooltip.dark");
 		LANG_KEYS.put(ElementalAspect.POISON, "fmc.core.element.tooltip.poison");
 		LANG_KEYS.put(ElementalAspect.GRAVITY, "fmc.core.element.tooltip.gravity");
+
+		for(ElementalAspect e : EnumSet.range(FIRE, GRAVITY))
+		{
+			randomList.add(e);
+		}
 	}
 
 	private ElementalAspect(String key)
 	{
 		this.key = key;
 	}
+
+		/**
+	 * Get a random element (excludes NONE)
+	 * @return a random element
+	 */
+	public static ElementalAspect randomElement()
+	{
+
+		Collections.shuffle(randomList);
+		return randomList.get(0);
+	}
+
+	/**
+	 * Get a random element from the provided list
+	 * @return random element
+	 */
+	public static ElementalAspect randomElement(List<ElementalAspect> list)
+	{
+		List<ElementalAspect> temp = new ArrayList<ElementalAspect>();
+		Collections.copy(temp, list);
+		Collections.shuffle(temp);
+		return list.get(0);
+	}
+
+	public String getLangKey()
+	{
+		return LANG_KEYS.get(this);
+	}
+
+	public static String getLangKey(ElementalAspect element)
+	{
+		return LANG_KEYS.get(element);
+	}
+
+	public static ElementalAspect getResistantTo(ElementalAspect element)
+	{
+		return RESIST.get(element);
+	}
+
+	public ElementalAspect getResistantTo()
+	{
+		return RESIST.get(this);
+	}
+
+	public static ElementalAspect getWeakTo(ElementalAspect element)
+	{
+		return WEAK.get(element);
+	}
+
+	public ElementalAspect getWeakTo()
+	{
+		return WEAK.get(this);
+	}
+
+	public String toNbtKey()
+	{
+		return key;
+	}
+
+	public static String toNbtKey(ElementalAspect aspect)
+	{
+		return aspect.key;
+	}
+
+	public static ElementalAspect fromNbtKey(String key)
+	{
+		return NBT_KEYS.containsKey(key) ? NBT_KEYS.get(key) : NONE;
+	}
+
 }
