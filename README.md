@@ -4,7 +4,7 @@
 
 
 # Features
-FMC adds a variety of Final Fantasy inpsired content to Minecraft.
+FMC (Final Minecraft) adds a variety of Final Fantasy inpsired content to Minecraft.
 
 ### Current features
 * [Elemental Aspects](#)
