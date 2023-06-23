@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "fmc",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "FMC (Final Minecraft)",
+	"description": "Final Fantasy inspired content for Minecraft.",
 	"authors": [
 		"Lafolie"
 	],
