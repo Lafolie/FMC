@@ -1,10 +1,11 @@
-# FMC
+# Final Minecraft
 
-## FMC is a [Fabric mod](https://www.fabricmc.net/) for [Minecraft](https://www.minecraft.net/en-us) 1.20.1
-
+## Final Minecraft is a [Fabric mod](https://www.fabricmc.net/) for [Minecraft](https://www.minecraft.net/en-us) 1.20.1
 
 # Features
-FMC (Final Minecraft) adds a variety of Final Fantasy inpsired content to Minecraft.
+Final Minecraft (FMC) adds a variety of Final Fantasy inpsired content to Minecraft.
+
+FMC is designed to augment surival mode with new combat, building, and crafting gameplay. Added content is centred around balance and longevity, allowing players to form new long-term goals in the sandbox environment.
 
 ### Current features
 * [Elemental Aspects](#)
@@ -12,6 +13,7 @@ FMC (Final Minecraft) adds a variety of Final Fantasy inpsired content to Minecr
 * [Calendar System](#)
 * [Crystals](#)
 * ~~Status effects~~
+* ~~Jobs~~
 
 For detailed information about the mod, [visit the wiki](#).
 
@@ -49,6 +51,10 @@ FMC features built-in integration for these mods, but they are not required:
 |                    Name | Version | Modrinth Page     | GitHub Repository | Client/Server |
 |------------------------:|:-------:|:-----------------:|:-----------------:|:-------------:|
 |                Mod Menu | 7.1.0   | [link][mm_MR]     | [link][mm_GH]     | **Client**    |
+
+# Add-ons
+
+This is the core module for Final Minecraft. Some optional features (such as HUD overhaul) are planned as self-contained mods for compatibility reasons.
 
 # For Developers
 
