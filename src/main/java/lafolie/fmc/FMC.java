@@ -26,8 +26,14 @@ public class FMC implements ModInitializer
 		LOG.info("Loaded FMC Core version {}", VERSION_STRING);
 		LOG.info(AlBhed.toAlBhed("Welcome to FMC!"));
 
-		// TODO Auto-generated method stub
-		// throw new UnsupportedOperationException("Unimplemented method 'onInitialize'");
+		initContent();
+	}
+
+	private void initContent()
+	{
+		FMCItemGroup.init();
+		FMCBlocks.init();
+		FMCItems.init();
 	}
 
 	// -------------------------------------------------------------------------

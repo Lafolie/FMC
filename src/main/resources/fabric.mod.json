@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "fmc",
+	"id": "final-minecraft",
 	"version": "${version}",
-	"name": "FMC (Final Minecraft)",
+	"name": "Final Minecraft",
 	"description": "Final Fantasy inspired content for Minecraft.",
 	"authors": [
 		"Lafolie"

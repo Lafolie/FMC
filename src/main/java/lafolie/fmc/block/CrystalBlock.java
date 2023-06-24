@@ -9,4 +9,5 @@ public class CrystalBlock extends Block
 		super(settings);
 		//TODO Auto-generated constructor stub
 	}
+	
 }

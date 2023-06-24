@@ -1,8 +1,10 @@
 package lafolie.fmc;
 
+import lafolie.fmc.block.CrystalBlock;
 import lafolie.fmc.util.FMCIdentifier;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -14,7 +16,7 @@ import net.minecraft.sound.BlockSoundGroup;
 
 public final class FMCBlocks
 {
-	public static final Block CRYSTAL         = new Block(FabricBlockSettings.create().strength(4.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK));
+	public static final CrystalBlock CRYSTAL  = new CrystalBlock(FabricBlockSettings.create().strength(4.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK));
 	public static final Block FIRE_CRYSTAL    = new Block(FabricBlockSettings.create().strength(4.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK));
 	public static final Block ICE_CRYSTAL     = new Block(FabricBlockSettings.create().strength(4.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK));
 	public static final Block THUNDER_CRYSTAL = new Block(FabricBlockSettings.create().strength(4.0f).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK));
@@ -39,17 +41,17 @@ public final class FMCBlocks
 
 	public static void init()
 	{
-		registerBlock("crystal_block", CRYSTAL, null);
-		registerBlock("fire_crystal_block", FIRE_CRYSTAL, null);
-		registerBlock("ice_crystal_block", ICE_CRYSTAL, null);
-		registerBlock("thunder_crystal_block", THUNDER_CRYSTAL, null);
-		registerBlock("wind_crystal_block", WIND_CRYSTAL, null);
-		registerBlock("water_crystal_block", WATER_CRYSTAL, null);
-		registerBlock("earth_crystal_block", EARTH_CRYSTAL, null);
-		registerBlock("holy_crystal_block", HOLY_CRYSTAL, null);
-		registerBlock("dark_crystal_block", DARK_CRYSTAL, null);
-		registerBlock("poison_crystal_block", POISON_CRYSTAL, null);
-		registerBlock("gravity_crystal_block", GRAVITY_CRYSTAL, null);
+		registerBlock("crystal_block", CRYSTAL, new FabricItemSettings());
+		registerBlock("fire_crystal_block", FIRE_CRYSTAL, new FabricItemSettings());
+		registerBlock("ice_crystal_block", ICE_CRYSTAL, new FabricItemSettings());
+		registerBlock("thunder_crystal_block", THUNDER_CRYSTAL, new FabricItemSettings());
+		registerBlock("wind_crystal_block", WIND_CRYSTAL, new FabricItemSettings());
+		registerBlock("water_crystal_block", WATER_CRYSTAL, new FabricItemSettings());
+		registerBlock("earth_crystal_block", EARTH_CRYSTAL, new FabricItemSettings());
+		registerBlock("holy_crystal_block", HOLY_CRYSTAL, new FabricItemSettings());
+		registerBlock("dark_crystal_block", DARK_CRYSTAL, new FabricItemSettings());
+		registerBlock("poison_crystal_block", POISON_CRYSTAL, new FabricItemSettings());
+		registerBlock("gravity_crystal_block", GRAVITY_CRYSTAL, new FabricItemSettings());
 		
 		// Registry.register(Registry.BLOCK, FMCIdentifier.contentID("home_crystal_block"), HOME_CRYSTAL);
 		// HOME_CRYSTAL_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, FMCIdentifier.contentID("home_crystal_block_entity"), FabricBlockEntityTypeBuilder.create(HomeCrystalBlockEntity::new, HOME_CRYSTAL).build(null));
