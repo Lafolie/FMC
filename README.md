@@ -39,7 +39,7 @@ FMC should be installed on both clients and the server.
 
 # Dependencies
 
-|                    Name | Version | CurseForge Page   | GitHub Repository | Client/Server |
+|                    Name | Version | Modrinth Page     | GitHub Repository | Client/Server |
 |------------------------:|:-------:|:-----------------:|:-----------------:|:-------------:|
 |              Fabric API | 0.84.0+ | [link][fabric_MR] | [link][fabric_GH] | **Both**      |
 
