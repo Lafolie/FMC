@@ -3,9 +3,9 @@
 ## Final Minecraft is a [Fabric mod](https://www.fabricmc.net/) for [Minecraft](https://www.minecraft.net/en-us) 1.20.1
 
 # Features
-Final Minecraft (FMC) adds a variety of Final Fantasy inpsired content to Minecraft.
+Final Minecraft (FMC) adds a variety of Final Fantasy inspired content to Minecraft.
 
-FMC is designed to augment surival mode with new combat, building, and crafting gameplay. Added content is centred around balance and longevity, allowing players to form new long-term goals in the sandbox environment.
+FMC is designed to augment surival mode with new combat, building, and crafting gameplay. Added content is centred around balance and longevity, allowing players to form new long-term goals in the sandbox game.
 
 ### Current features
 * [Elemental Aspects](#)
@@ -17,7 +17,7 @@ FMC is designed to augment surival mode with new combat, building, and crafting 
 
 For detailed information about the mod, [visit the wiki](#).
 
-You can also [join the official Final Minecraft Discord](#).
+You can also [join the official Final Minecraft Discord](https://discord.gg/Ytu2f2MAQJ).
 
 ### Supported Versions
 As the mod is still in alpha, there is no release.
