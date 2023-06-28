@@ -9,22 +9,27 @@ public enum ElementalAttribute
 	 * Increases damage.
 	 */
 	WEAKNESS("weak"),
+
 	/**
 	 * Reduces damage.
 	 */
 	RESISTANCE("res"),
+
 	/**
 	 * Damage will be nullified (0).
 	 */
 	IMMUNITY("immune"),
+
 	/**
 	 * Damage becomes healing.
 	 */
 	ABSORBTION("absorb"),
+
 	/**
 	 * Damage will instantly kill.
 	 */
 	FATAL("fatal"),
+	
 	/**
 	 * Damage will fully heal.
 	 */

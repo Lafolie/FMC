@@ -10,17 +10,17 @@ import java.util.Map;
 
 public enum ElementalAspect
 {
-	NONE("n"),
-	FIRE("f"),
-	ICE("i"),
-	THUNDER("t"),
-	WIND("w"),
-	WATER("u"),
-	EARTH("e"),
-	HOLY("h"),
-	DARK("d"),
-	POISON("p"),
-	GRAVITY("g");
+	NONE("none"),
+	FIRE("fire"),
+	ICE("ice"),
+	THUNDER("thunder"),
+	WIND("wind"),
+	WATER("water"),
+	EARTH("earth"),
+	HOLY("holy"),
+	DARK("dark"),
+	POISON("poison"),
+	GRAVITY("gravity");
 
 	private String key;
 

@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"lafolie.fmc.FMCClient"
+		],
+		"cardinal-components": [
+			"lafolie.fmc.internal.Components"
 		]
 	},
 	"mixins": [
@@ -49,6 +52,10 @@
 	},
 
 	"custom": {
+		"cardinal-components": [
+			"final-minecraft:elemental_stats_cmp"
+		],
+
 		"modmenu": {
 			"links": {
 			  "modmenu.discord": "https://discord.gg/???"
