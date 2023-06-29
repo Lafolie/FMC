@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:crafting_shaped",
-	"group": "elemental_crystal_blocks",
+	"group": "final-minecraft:elemental_crystal_blocks",
 	"pattern": [
 	  "###",
 	  "###",
@@ -8,7 +8,7 @@
 	],
 	"key": {
 	  "#": {
-		"item": "final-minecraft:earth_crystal_item"
+		"item": "final-minecraft:earth_crystal"
 	  }
 	},
 	"result": {

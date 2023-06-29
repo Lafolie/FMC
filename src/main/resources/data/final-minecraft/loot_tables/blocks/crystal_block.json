@@ -29,7 +29,7 @@
 			  },
 			  {
 				"type": "minecraft:item",
-				"name": "final-minecraft:crystal_shard_item",
+				"name": "final-minecraft:crystal_shard",
 				"functions": [
 				  {
 					"function": "minecraft:set_count",

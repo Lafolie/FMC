@@ -34,18 +34,18 @@ public final class FMCItems
 
 	public static final void init()
 	{
-		registerItem("crystal_shard_item", CRYSTAL_SHARD);
-		registerItem("crystal_item", CRYSTAL);
-		registerItem("fire_crystal_item", FIRE_CRYSTAL);
-		registerItem("ice_crystal_item", ICE_CRYSTAL);
-		registerItem("thunder_crystal_item", THUNDER_CRYSTAL);
-		registerItem("wind_crystal_item", WIND_CRYSTAL);
-		registerItem("water_crystal_item", WATER_CRYSTAL);
-		registerItem("earth_crystal_item", EARTH_CRYSTAL);
-		registerItem("holy_crystal_item", HOLY_CRYSTAL);
-		registerItem("dark_crystal_item", DARK_CRYSTAL);
-		registerItem("poison_crystal_item", POISON_CRYSTAL);
-		registerItem("gravity_crystal_item", GRAVITY_CRYSTAL);
+		registerItem("crystal_shard", CRYSTAL_SHARD);
+		registerItem("crystal", CRYSTAL);
+		registerItem("fire_crystal", FIRE_CRYSTAL);
+		registerItem("ice_crystal", ICE_CRYSTAL);
+		registerItem("thunder_crystal", THUNDER_CRYSTAL);
+		registerItem("wind_crystal", WIND_CRYSTAL);
+		registerItem("water_crystal", WATER_CRYSTAL);
+		registerItem("earth_crystal", EARTH_CRYSTAL);
+		registerItem("holy_crystal", HOLY_CRYSTAL);
+		registerItem("dark_crystal", DARK_CRYSTAL);
+		registerItem("poison_crystal", POISON_CRYSTAL);
+		registerItem("gravity_crystal", GRAVITY_CRYSTAL);
 		// #<item_register>
 
 		ItemGroupEvents.modifyEntriesEvent(FMCItemGroup.KEY).register(content ->

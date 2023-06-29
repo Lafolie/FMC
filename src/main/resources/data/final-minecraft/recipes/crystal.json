@@ -7,10 +7,10 @@
 	],
 	"key": {
 		"#": {
-			"item": "final-minecraft:crystal"
+		"item": "final-minecraft:crystal_shard"
 		}
 	},
 	"result": {
-		"item": "final-minecraft:crystal_block"
+		"item": "final-minecraft:crystal"
 	}
   }

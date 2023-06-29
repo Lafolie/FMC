@@ -33,7 +33,7 @@ public final class FMCBlocks
 	// public static final CrystalPedestalBlock CRYSTAL_PEDESTAL = new CrystalPedestalBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f));
 	// #<block_instance>
 
-	private static void registerBlock(String name, Block block, Settings itemSettings)
+	private static void registerBlockWithItem(String name, Block block, Settings itemSettings)
 	{
 		Registry.register(Registries.BLOCK, FMCIdentifier.contentID(name), block);
 		Registry.register(Registries.ITEM, FMCIdentifier.contentID(name), new BlockItem(block, itemSettings));
@@ -41,17 +41,17 @@ public final class FMCBlocks
 
 	public static void init()
 	{
-		registerBlock("crystal_block", CRYSTAL, new FabricItemSettings());
-		registerBlock("fire_crystal_block", FIRE_CRYSTAL, new FabricItemSettings());
-		registerBlock("ice_crystal_block", ICE_CRYSTAL, new FabricItemSettings());
-		registerBlock("thunder_crystal_block", THUNDER_CRYSTAL, new FabricItemSettings());
-		registerBlock("wind_crystal_block", WIND_CRYSTAL, new FabricItemSettings());
-		registerBlock("water_crystal_block", WATER_CRYSTAL, new FabricItemSettings());
-		registerBlock("earth_crystal_block", EARTH_CRYSTAL, new FabricItemSettings());
-		registerBlock("holy_crystal_block", HOLY_CRYSTAL, new FabricItemSettings());
-		registerBlock("dark_crystal_block", DARK_CRYSTAL, new FabricItemSettings());
-		registerBlock("poison_crystal_block", POISON_CRYSTAL, new FabricItemSettings());
-		registerBlock("gravity_crystal_block", GRAVITY_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("crystal_block", CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("fire_crystal_block", FIRE_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("ice_crystal_block", ICE_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("thunder_crystal_block", THUNDER_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("wind_crystal_block", WIND_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("water_crystal_block", WATER_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("earth_crystal_block", EARTH_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("holy_crystal_block", HOLY_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("dark_crystal_block", DARK_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("poison_crystal_block", POISON_CRYSTAL, new FabricItemSettings());
+		registerBlockWithItem("gravity_crystal_block", GRAVITY_CRYSTAL, new FabricItemSettings());
 		
 		// Registry.register(Registry.BLOCK, FMCIdentifier.contentID("home_crystal_block"), HOME_CRYSTAL);
 		// HOME_CRYSTAL_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, FMCIdentifier.contentID("home_crystal_block_entity"), FabricBlockEntityTypeBuilder.create(HomeCrystalBlockEntity::new, HOME_CRYSTAL).build(null));
