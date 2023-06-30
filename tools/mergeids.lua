@@ -36,14 +36,21 @@ function addRow(csv, ...)
 end
 
 function merge(name, ...)
+	local numMerged = 0
+	local numSkipped = 0
 	local data = loadCSV(csvFiles[name])
 	for id in io.lines(dumpFiles[name]) do
 		if not data.lut[id] then
 			addRow(data.csv, id, ...)
+			numMerged = numMerged + 1
+		else
+			numSkipped = numSkipped + 1
 		end
 	end
 
 	util.writeCSV(csvFiles[name], data.csv)
+
+	print(string.format("Merged %s: %d (%d skipped)", name, numMerged, numSkipped))
 end
 
 merge("entities", "n", "n", "n", "n", "n")
