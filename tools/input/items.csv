@@ -16,8 +16,8 @@ final-minecraft:ice_crystal_block,i
 final-minecraft:ice_crystal,i
 final-minecraft:poison_crystal_block,p
 final-minecraft:poison_crystal,p
-final-minecraft:thunder_crystal_block,l
-final-minecraft:thunder_crystal,l
+final-minecraft:thunder_crystal_block,t
+final-minecraft:thunder_crystal,t
 final-minecraft:water_crystal_block,u
 final-minecraft:water_crystal,u
 final-minecraft:wind_crystal_block,w
@@ -39,7 +39,7 @@ minecraft:acacia_slab,w
 minecraft:acacia_stairs,w
 minecraft:acacia_trapdoor,w
 minecraft:acacia_wood,w
-minecraft:activator_rail,l
+minecraft:activator_rail,t
 minecraft:air,n
 minecraft:allay_spawn_egg,n
 minecraft:allium,w
@@ -126,7 +126,7 @@ minecraft:black_shulker_box,g
 minecraft:black_stained_glass,n
 minecraft:black_stained_glass_pane,n
 minecraft:black_terracotta,e
-minecraft:black_wool,l
+minecraft:black_wool,t
 minecraft:blackstone,d
 minecraft:blackstone_slab,d
 minecraft:blackstone_stairs,d
@@ -150,7 +150,7 @@ minecraft:blue_shulker_box,g
 minecraft:blue_stained_glass,n
 minecraft:blue_stained_glass_pane,n
 minecraft:blue_terracotta,e
-minecraft:blue_wool,l
+minecraft:blue_wool,t
 minecraft:bone,n
 minecraft:bone_block,d
 minecraft:bone_meal,n
@@ -183,7 +183,7 @@ minecraft:brown_shulker_box,g
 minecraft:brown_stained_glass,n
 minecraft:brown_stained_glass_pane,n
 minecraft:brown_terracotta,e
-minecraft:brown_wool,l
+minecraft:brown_wool,t
 minecraft:brush,n
 minecraft:bubble_coral,u
 minecraft:bubble_coral_block,u
@@ -269,7 +269,7 @@ minecraft:cod_bucket,u
 minecraft:cod_spawn_egg,n
 minecraft:command_block,g
 minecraft:command_block_minecart,g
-minecraft:comparator,l
+minecraft:comparator,t
 minecraft:compass,n
 minecraft:composter,e
 minecraft:conduit,u
@@ -293,7 +293,7 @@ minecraft:cracked_polished_blackstone_bricks,d
 minecraft:cracked_stone_bricks,e
 minecraft:crafting_table,w
 minecraft:creeper_banner_pattern,n
-minecraft:creeper_head,l
+minecraft:creeper_head,t
 minecraft:creeper_spawn_egg,n
 minecraft:crimson_button,e
 minecraft:crimson_door,e
@@ -356,7 +356,7 @@ minecraft:dark_oak_wood,w
 minecraft:dark_prismarine,u
 minecraft:dark_prismarine_slab,u
 minecraft:dark_prismarine_stairs,u
-minecraft:daylight_detector,l
+minecraft:daylight_detector,t
 minecraft:dead_brain_coral,n
 minecraft:dead_brain_coral_block,n
 minecraft:dead_brain_coral_fan,n
@@ -392,7 +392,7 @@ minecraft:deepslate_tile_slab,e
 minecraft:deepslate_tile_stairs,e
 minecraft:deepslate_tile_wall,e
 minecraft:deepslate_tiles,e
-minecraft:detector_rail,l
+minecraft:detector_rail,t
 minecraft:diamond,n
 minecraft:diamond_axe,n
 minecraft:diamond_block,n
@@ -413,7 +413,7 @@ minecraft:diorite_wall,e
 minecraft:dirt,e
 minecraft:dirt_path,e
 minecraft:disc_fragment_5,n
-minecraft:dispenser,l
+minecraft:dispenser,t
 minecraft:dolphin_spawn_egg,n
 minecraft:donkey_spawn_egg,n
 minecraft:dragon_breath,n
@@ -422,7 +422,7 @@ minecraft:dragon_head,n
 minecraft:dried_kelp,u
 minecraft:dried_kelp_block,u
 minecraft:dripstone_block,u
-minecraft:dropper,l
+minecraft:dropper,t
 minecraft:drowned_spawn_egg,n
 minecraft:dune_armor_trim_smithing_template,n
 minecraft:echo_shard,n
@@ -437,7 +437,7 @@ minecraft:enchanted_golden_apple,h
 minecraft:enchanting_table,n
 minecraft:end_crystal,g
 minecraft:end_portal_frame,g
-minecraft:end_rod,l
+minecraft:end_rod,t
 minecraft:end_stone,e
 minecraft:end_stone_brick_slab,e
 minecraft:end_stone_brick_stairs,e
@@ -534,7 +534,7 @@ minecraft:gray_shulker_box,g
 minecraft:gray_stained_glass,n
 minecraft:gray_stained_glass_pane,n
 minecraft:gray_terracotta,e
-minecraft:gray_wool,l
+minecraft:gray_wool,t
 minecraft:green_banner,n
 minecraft:green_bed,n
 minecraft:green_candle,f
@@ -547,7 +547,7 @@ minecraft:green_shulker_box,g
 minecraft:green_stained_glass,n
 minecraft:green_stained_glass_pane,n
 minecraft:green_terracotta,e
-minecraft:green_wool,l
+minecraft:green_wool,t
 minecraft:grindstone,e
 minecraft:guardian_spawn_egg,n
 minecraft:gunpowder,f
@@ -556,14 +556,14 @@ minecraft:hay_block,w
 minecraft:heart_of_the_sea,u
 minecraft:heart_pottery_sherd,n
 minecraft:heartbreak_pottery_sherd,n
-minecraft:heavy_weighted_pressure_plate,l
+minecraft:heavy_weighted_pressure_plate,t
 minecraft:hoglin_spawn_egg,n
 minecraft:honey_block,n
 minecraft:honey_bottle,n
 minecraft:honeycomb,n
 minecraft:honeycomb_block,n
-minecraft:hopper,l
-minecraft:hopper_minecart,l
+minecraft:hopper,t
+minecraft:hopper_minecart,t
 minecraft:horn_coral,n
 minecraft:horn_coral_block,n
 minecraft:horn_coral_fan,n
@@ -637,7 +637,7 @@ minecraft:leather_helmet,n
 minecraft:leather_horse_armor,n
 minecraft:leather_leggings,n
 minecraft:lectern,w
-minecraft:lever,l
+minecraft:lever,t
 minecraft:light,n
 minecraft:light_blue_banner,n
 minecraft:light_blue_bed,n
@@ -651,7 +651,7 @@ minecraft:light_blue_shulker_box,g
 minecraft:light_blue_stained_glass,n
 minecraft:light_blue_stained_glass_pane,n
 minecraft:light_blue_terracotta,e
-minecraft:light_blue_wool,l
+minecraft:light_blue_wool,t
 minecraft:light_gray_banner,n
 minecraft:light_gray_bed,n
 minecraft:light_gray_candle,f
@@ -664,7 +664,7 @@ minecraft:light_gray_shulker_box,g
 minecraft:light_gray_stained_glass,n
 minecraft:light_gray_stained_glass_pane,n
 minecraft:light_gray_terracotta,e
-minecraft:light_gray_wool,l
+minecraft:light_gray_wool,t
 minecraft:light_weighted_pressure_plate,n
 minecraft:lightning_rod,e
 minecraft:lilac,w
@@ -682,10 +682,10 @@ minecraft:lime_shulker_box,g
 minecraft:lime_stained_glass,n
 minecraft:lime_stained_glass_pane,n
 minecraft:lime_terracotta,e
-minecraft:lime_wool,l
+minecraft:lime_wool,t
 minecraft:lingering_potion,n
 minecraft:llama_spawn_egg,n
-minecraft:lodestone,l
+minecraft:lodestone,t
 minecraft:loom,w
 minecraft:magenta_banner,n
 minecraft:magenta_bed,n
@@ -699,7 +699,7 @@ minecraft:magenta_shulker_box,g
 minecraft:magenta_stained_glass,n
 minecraft:magenta_stained_glass_pane,n
 minecraft:magenta_terracotta,e
-minecraft:magenta_wool,l
+minecraft:magenta_wool,t
 minecraft:magma_block,f
 minecraft:magma_cream,f
 minecraft:magma_cube_spawn_egg,n
@@ -797,7 +797,7 @@ minecraft:netherite_shovel,n
 minecraft:netherite_sword,n
 minecraft:netherite_upgrade_smithing_template,n
 minecraft:netherrack,f
-minecraft:note_block,l
+minecraft:note_block,t
 minecraft:oak_boat,w
 minecraft:oak_button,w
 minecraft:oak_chest_boat,w
@@ -815,7 +815,7 @@ minecraft:oak_slab,w
 minecraft:oak_stairs,w
 minecraft:oak_trapdoor,w
 minecraft:oak_wood,w
-minecraft:observer,l
+minecraft:observer,t
 minecraft:obsidian,d
 minecraft:ocelot_spawn_egg,n
 minecraft:ochre_froglight,f
@@ -832,7 +832,7 @@ minecraft:orange_stained_glass,n
 minecraft:orange_stained_glass_pane,n
 minecraft:orange_terracotta,e
 minecraft:orange_tulip,w
-minecraft:orange_wool,l
+minecraft:orange_wool,t
 minecraft:oxeye_daisy,w
 minecraft:oxidized_copper,e
 minecraft:oxidized_cut_copper,e
@@ -869,8 +869,8 @@ minecraft:pink_stained_glass,n
 minecraft:pink_stained_glass_pane,n
 minecraft:pink_terracotta,e
 minecraft:pink_tulip,w
-minecraft:pink_wool,l
-minecraft:piston,l
+minecraft:pink_wool,t
+minecraft:piston,t
 minecraft:pitcher_plant,w
 minecraft:pitcher_pod,w
 minecraft:player_head,n
@@ -909,7 +909,7 @@ minecraft:porkchop,n
 minecraft:potato,e
 minecraft:potion,n
 minecraft:powder_snow_bucket,i
-minecraft:powered_rail,l
+minecraft:powered_rail,t
 minecraft:prismarine,u
 minecraft:prismarine_brick_slab,u
 minecraft:prismarine_brick_stairs,u
@@ -938,7 +938,7 @@ minecraft:purple_shulker_box,g
 minecraft:purple_stained_glass,n
 minecraft:purple_stained_glass_pane,n
 minecraft:purple_terracotta,e
-minecraft:purple_wool,l
+minecraft:purple_wool,t
 minecraft:purpur_block,e
 minecraft:purpur_pillar,e
 minecraft:purpur_slab,e
@@ -988,15 +988,15 @@ minecraft:red_stained_glass,n
 minecraft:red_stained_glass_pane,n
 minecraft:red_terracotta,e
 minecraft:red_tulip,w
-minecraft:red_wool,l
-minecraft:redstone,l
-minecraft:redstone_block,l
-minecraft:redstone_lamp,l
-minecraft:redstone_ore,l
-minecraft:redstone_torch,l
+minecraft:red_wool,t
+minecraft:redstone,t
+minecraft:redstone_block,t
+minecraft:redstone_lamp,t
+minecraft:redstone_ore,t
+minecraft:redstone_torch,t
 minecraft:reinforced_deepslate,e
-minecraft:repeater,l
-minecraft:repeating_command_block,l
+minecraft:repeater,t
+minecraft:repeating_command_block,t
 minecraft:respawn_anchor,d
 minecraft:rib_armor_trim_smithing_template,n
 minecraft:rooted_dirt,e
@@ -1099,7 +1099,7 @@ minecraft:spruce_wood,w
 minecraft:spyglass,n
 minecraft:squid_spawn_egg,n
 minecraft:stick,w
-minecraft:sticky_piston,l
+minecraft:sticky_piston,t
 minecraft:stone,e
 minecraft:stone_axe,e
 minecraft:stone_brick_slab,e
@@ -1243,7 +1243,7 @@ minecraft:white_stained_glass,n
 minecraft:white_stained_glass_pane,n
 minecraft:white_terracotta,e
 minecraft:white_tulip,w
-minecraft:white_wool,l
+minecraft:white_wool,t
 minecraft:wild_armor_trim_smithing_template,n
 minecraft:witch_spawn_egg,n
 minecraft:wither_rose,d
@@ -1270,7 +1270,7 @@ minecraft:yellow_shulker_box,g
 minecraft:yellow_stained_glass,n
 minecraft:yellow_stained_glass_pane,n
 minecraft:yellow_terracotta,e
-minecraft:yellow_wool,l
+minecraft:yellow_wool,t
 minecraft:zoglin_spawn_egg,n
 minecraft:zombie_head,d
 minecraft:zombie_horse_spawn_egg,n

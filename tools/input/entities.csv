@@ -15,10 +15,10 @@ minecraft:cave_spider,p,p,p,n,n
 minecraft:chest_boat,n,n,n,n,n
 minecraft:chest_minecart,n,n,n,n,n
 minecraft:chicken,n,n,n,n,n
-minecraft:cod,u,n,n,l,n
+minecraft:cod,u,n,n,t,n
 minecraft:command_block_minecart,n,n,n,n,n
 minecraft:cow,n,n,n,n,n
-minecraft:creeper,l,l,l,n,n
+minecraft:creeper,t,t,t,n,n
 minecraft:dolphin,u,n,n,n,n
 minecraft:donkey,n,n,n,n,n
 minecraft:dragon_fireball,n,n,n,n,n
@@ -45,7 +45,7 @@ minecraft:furnace_minecart,n,n,n,n,n
 minecraft:ghast,d,f,n,n,n
 minecraft:giant,n,n,n,n,n
 minecraft:glow_item_frame,n,n,n,n,n
-minecraft:glow_squid,uh,n,n,l,n
+minecraft:glow_squid,uh,n,n,t,n
 minecraft:goat,n,i,n,n,n
 minecraft:guardian,u,n,n,n,n
 minecraft:hoglin,n,n,n,n,n
@@ -59,7 +59,7 @@ minecraft:item,n,n,n,n,n
 minecraft:item_display,n,n,n,n,n
 minecraft:item_frame,n,n,n,n,n
 minecraft:leash_knot,n,n,n,n,n
-minecraft:lightning_bolt,l,n,n,n,n
+minecraft:lightning_bolt,t,n,n,n,n
 minecraft:llama,n,n,n,n,n
 minecraft:llama_spit,n,n,n,n,n
 minecraft:magma_cube,f,f,f,n,f
@@ -79,10 +79,10 @@ minecraft:pillager,n,n,n,n,n
 minecraft:player,n,n,n,n,n
 minecraft:polar_bear,i,n,n,n,n
 minecraft:potion,n,n,n,n,n
-minecraft:pufferfish,u,n,n,l,n
+minecraft:pufferfish,u,n,n,t,n
 minecraft:rabbit,n,n,n,n,n
 minecraft:ravager,n,n,n,n,n
-minecraft:salmon,u,n,n,l,n
+minecraft:salmon,u,n,n,t,n
 minecraft:sheep,n,n,n,n,n
 minecraft:shulker,g,g,g,n,g
 minecraft:shulker_bullet,n,n,n,n,n
@@ -97,7 +97,7 @@ minecraft:snowball,i,n,n,n,n
 minecraft:spawner_minecart,n,n,n,n,n
 minecraft:spectral_arrow,n,n,n,n,n
 minecraft:spider,n,n,n,n,n
-minecraft:squid,u,n,n,l,n
+minecraft:squid,u,n,n,t,n
 minecraft:stray,id,n,n,n,n
 minecraft:strider,f,f,n,n,n
 minecraft:tadpole,u,n,n,n,n
@@ -106,7 +106,7 @@ minecraft:tnt,n,n,n,n,n
 minecraft:tnt_minecart,n,n,n,n,n
 minecraft:trader_llama,n,n,n,n,n
 minecraft:trident,n,n,n,n,n
-minecraft:tropical_fish,u,n,n,l,n
+minecraft:tropical_fish,u,n,n,t,n
 minecraft:turtle,u,n,n,n,n
 minecraft:vex,wg,d,n,n,n
 minecraft:villager,n,n,n,n,n
