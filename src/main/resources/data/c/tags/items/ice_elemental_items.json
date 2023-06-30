@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"final-minecraft:ice_crystal_block",
+		"final-minecraft:ice_crystal",
+		"minecraft:blue_ice",
+		"minecraft:ice",
+		"minecraft:packed_ice",
+		"minecraft:powder_snow_bucket",
+		"minecraft:snow",
+		"minecraft:snow_block",
+		"minecraft:snowball"
+	]
+}

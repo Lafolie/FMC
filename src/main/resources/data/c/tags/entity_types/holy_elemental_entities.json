@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:allay",
+		"minecraft:elder_guardian",
+		"minecraft:glow_squid"
+	]
+}

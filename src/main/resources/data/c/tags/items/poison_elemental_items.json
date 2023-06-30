@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"final-minecraft:poison_crystal_block",
+		"final-minecraft:poison_crystal",
+		"minecraft:fermented_spider_eye",
+		"minecraft:poisonous_potato",
+		"minecraft:rotten_flesh",
+		"minecraft:slime_ball",
+		"minecraft:slime_block"
+	]
+}

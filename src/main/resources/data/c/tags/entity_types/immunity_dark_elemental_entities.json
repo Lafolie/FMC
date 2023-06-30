@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:phantom",
+		"minecraft:vex",
+		"minecraft:warden",
+		"minecraft:wither",
+		"minecraft:wither_skeleton"
+	]
+}

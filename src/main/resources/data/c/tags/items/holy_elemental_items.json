@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"final-minecraft:holy_crystal_block",
+		"final-minecraft:holy_crystal",
+		"minecraft:amethyst_block",
+		"minecraft:amethyst_cluster",
+		"minecraft:amethyst_shard",
+		"minecraft:beacon",
+		"minecraft:enchanted_golden_apple",
+		"minecraft:glowstone",
+		"minecraft:glowstone_dust"
+	]
+}
