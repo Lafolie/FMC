@@ -22,7 +22,7 @@ public interface ElementalStats
 
 		String key = element.toNbtKey();
 
-		NbtCompound elements = getNbtCompound();
+		NbtCompound elements = getOrCreateAttributeNbt(attribute);
 		if(!elements.contains(key))
 		{
 			elements.putByte(key, amount);
@@ -43,11 +43,45 @@ public interface ElementalStats
 	}
 
 	// Trigger a Component sync (does nothing for Items)
-	public default void trySync() {};
+	public default void trySync() {}
 
+	/**
+	 * Gets the nbt compound for all elemental data.
+	 * Implemented by ElementalStatsComponent for most types.
+	 * ItemStack implements this directly since Items don't use CCA.
+	 * @return master elemental NBT container
+	 */
 	public NbtCompound getNbtCompound();
 
-	// public NbtCompound getElementalNbt(ElementalAttribute attribute);
+	public void populateInnateStats(NbtCompound nbt);
 
-	// public NbtCompound getOrCreateElementalNbt(ElementalAttribute attribute);
+	/**
+	 * Gets the nbt compound for a specific attribute.
+	 * Attribute coumpounds contain all the elements and affinity counts
+	 * for the given attribute.
+	 * @param attribute
+	 * @return nbt compound to add ElementalAspect/Byte pairs
+	 */
+	public default NbtCompound getAttributeNbt(ElementalAttribute attribute)
+	{
+		return getNbtCompound().getCompound(attribute.toNbtKey());
+	}
+
+	/**
+	 * Get or create the nbt compound for a specific attribute.
+	 * Attribute coumpounds contain all the elements and affinity counts
+	 * for the given attribute.
+	 * @param attribute
+	 * @returnnbt compound to add ElementalAspect/Byte pairs
+	 */
+	public default NbtCompound getOrCreateAttributeNbt(ElementalAttribute attribute)
+	{
+		String key = attribute.toNbtKey();
+		NbtCompound nbt = getNbtCompound();
+		if(!nbt.contains(key, NbtCompound.COMPOUND_TYPE))
+		{
+			nbt.put(key, new NbtCompound());
+		}
+		return nbt.getCompound(key);
+	}
 }

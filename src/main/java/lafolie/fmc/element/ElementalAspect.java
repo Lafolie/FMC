@@ -68,17 +68,17 @@ public enum ElementalAspect
 		RESIST.put(ElementalAspect.POISON, ElementalAspect.NONE);
 		RESIST.put(ElementalAspect.GRAVITY, ElementalAspect.NONE);
 
-		LANG_KEYS.put(ElementalAspect.NONE, "fmc.core.element.tooltip.none");
-		LANG_KEYS.put(ElementalAspect.FIRE, "fmc.core.element.tooltip.fire");
-		LANG_KEYS.put(ElementalAspect.ICE, "fmc.core.element.tooltip.ice");
-		LANG_KEYS.put(ElementalAspect.THUNDER, "fmc.core.element.tooltip.lightning");
-		LANG_KEYS.put(ElementalAspect.WIND, "fmc.core.element.tooltip.wind");
-		LANG_KEYS.put(ElementalAspect.WATER, "fmc.core.element.tooltip.water");
-		LANG_KEYS.put(ElementalAspect.EARTH, "fmc.core.element.tooltip.earth");
-		LANG_KEYS.put(ElementalAspect.HOLY, "fmc.core.element.tooltip.holy");
-		LANG_KEYS.put(ElementalAspect.DARK, "fmc.core.element.tooltip.dark");
-		LANG_KEYS.put(ElementalAspect.POISON, "fmc.core.element.tooltip.poison");
-		LANG_KEYS.put(ElementalAspect.GRAVITY, "fmc.core.element.tooltip.gravity");
+		LANG_KEYS.put(ElementalAspect.NONE, "fmc.element.tooltip.none");
+		LANG_KEYS.put(ElementalAspect.FIRE, "fmc.element.tooltip.fire");
+		LANG_KEYS.put(ElementalAspect.ICE, "fmc.element.tooltip.ice");
+		LANG_KEYS.put(ElementalAspect.THUNDER, "fmc.element.tooltip.thunder");
+		LANG_KEYS.put(ElementalAspect.WIND, "fmc.element.tooltip.wind");
+		LANG_KEYS.put(ElementalAspect.WATER, "fmc.element.tooltip.water");
+		LANG_KEYS.put(ElementalAspect.EARTH, "fmc.element.tooltip.earth");
+		LANG_KEYS.put(ElementalAspect.HOLY, "fmc.element.tooltip.holy");
+		LANG_KEYS.put(ElementalAspect.DARK, "fmc.element.tooltip.dark");
+		LANG_KEYS.put(ElementalAspect.POISON, "fmc.element.tooltip.poison");
+		LANG_KEYS.put(ElementalAspect.GRAVITY, "fmc.element.tooltip.gravity");
 
 		for(ElementalAspect e : EnumSet.range(FIRE, GRAVITY))
 		{
@@ -91,7 +91,7 @@ public enum ElementalAspect
 		this.key = key;
 	}
 
-		/**
+	/**
 	 * Get a random element (excludes NONE)
 	 * @return a random element
 	 */

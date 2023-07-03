@@ -4,6 +4,7 @@ import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 
+import lafolie.fmc.FMC;
 import lafolie.fmc.element.ElementalAspect;
 import lafolie.fmc.element.ElementalAttribute;
 import lafolie.fmc.element.ElementalObject;
@@ -53,14 +54,16 @@ public final class ElementalItemTags
 		if(!CACHE.containsKey(ref))
 		{
 			ElementalAspect element = findTag(ref);
-			if(element != null)
-			{
-				CACHE.put(ref, element);
-			}
+			CACHE.put(ref, element != null ? element : ElementalAspect.NONE);
 		}
+
 		ElementalAspect element = CACHE.get(ref);
-		ElementalObject obj = (ElementalObject)(Object)stack;
-		obj.modifyElementalAspectNoSync(element, ElementalAttribute.RESISTANCE, 1); //TODO: update value
+		if(element != ElementalAspect.NONE)
+		{
+			// FMC.LOG.info("{} is {}", stack.toString(), element.toString());
+			ElementalObject obj = (ElementalObject)(Object)stack;
+			obj.modifyElementalAspectNoSync(element, ElementalAttribute.RESISTANCE, 1); //TODO: update value
+		}
 	}
 
 	public static ElementalAspect getItemElementalTag(RegistryEntry.Reference<Item> itemEntry)

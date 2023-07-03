@@ -64,7 +64,7 @@ public interface ElementalObject
 
 	public default boolean hasElementalAspect(ElementalAspect element, ElementalAttribute attribute)
 	{
-		NbtCompound nbt = getElementalStats().getNbtCompound();
+		NbtCompound nbt = getElementalStats().getAttributeNbt(attribute);
 		if(nbt != null)
 		{
 			return nbt.contains(element.toNbtKey());
@@ -74,8 +74,7 @@ public interface ElementalObject
 
 	public default int getElementalAffinity(ElementalAspect element, ElementalAttribute attribute)
 	{
-		ElementalStats stats = getElementalStats();
-		NbtCompound nbt = stats.getNbtCompound();
+		NbtCompound nbt = getElementalStats().getAttributeNbt(attribute);
 		if(nbt != null)
 		{
 			String key = element.toNbtKey();
@@ -155,7 +154,7 @@ public interface ElementalObject
 
 		for(ElementalAttribute attribute : ElementalAttribute.values())
 		{
-			NbtCompound nbt = stats.getNbtCompound();
+			NbtCompound nbt = stats.getAttributeNbt(attribute);
 			if(nbt != null)
 			{
 				for(String key : nbt.getKeys())
