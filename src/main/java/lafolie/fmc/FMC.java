@@ -5,19 +5,27 @@ import org.slf4j.LoggerFactory;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.CommandManager;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import dev.isxander.yacl3.api.YetAnotherConfigLib;
 import software.bernie.geckolib.GeckoLib;
 import dev.onyxstudios.cca.internal.CardinalComponentsBlock;
+import lafolie.fmc.element.ElementalObject;
 import lafolie.fmc.etc.AlBhed;
+import lafolie.fmc.internal.Components;
 import lafolie.fmc.internal.element.ElementalEntityTags;
 import lafolie.fmc.internal.element.ElementalItemTags;
+import lafolie.fmc.internal.element.ElementalStats;
+import lafolie.fmc.internal.element.ElementalStatsComponent;
 import lafolie.fmc.util.DumpIDs;
 import lafolie.fmc.util.ServerStatus;
 
@@ -38,6 +46,8 @@ public class FMC implements ModInitializer
 		LOG.info(AlBhed.toAlBhed("Welcome to FMC!"));
 
 		initContent();
+
+		ServerEntityEvents.ENTITY_LOAD.register(FMC::onEntityLoad);
 
 		ServerLifecycleEvents.SERVER_STARTING.register(FMC::onServerStarting);
 		ServerLifecycleEvents.SERVER_STARTED.register(FMC::onServerStarted);
@@ -61,6 +71,25 @@ public class FMC implements ModInitializer
 		FMCItemGroup.init();
 		FMCBlocks.init();
 		FMCItems.init();
+	}
+
+	// -------------------------------------------------------------------------
+	// Entity Callbacks
+	// -------------------------------------------------------------------------
+
+	private static void onEntityLoad(Entity entity, ServerWorld world)
+	{
+		if(entity instanceof LivingEntity)
+		{
+			ElementalObject obj = (ElementalObject)entity;
+			if(!obj.hasBeenInitialized())
+			{
+				// LOG.info("Initialising {}", entity.toString());
+				ElementalEntityTags.populateElements(entity);
+				obj.getElementalStats().trySync();
+			}
+
+		}
 	}
 
 	// -------------------------------------------------------------------------

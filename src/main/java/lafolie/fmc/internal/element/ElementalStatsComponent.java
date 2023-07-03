@@ -7,7 +7,7 @@ import net.minecraft.nbt.NbtCompound;
 
 public class ElementalStatsComponent implements ComponentV3, ElementalStats, AutoSyncedComponent
 {
-	private NbtCompound nbt;// = new NbtCompound();
+	private NbtCompound nbt = new NbtCompound();
 	private Object provider;
 
 	public ElementalStatsComponent(Object object)
@@ -27,7 +27,7 @@ public class ElementalStatsComponent implements ComponentV3, ElementalStats, Aut
 	@Override
 	public void writeToNbt(NbtCompound tag)
 	{
-		if(nbt != null && !nbt.isEmpty())
+		if(!nbt.isEmpty())
 		{
 			tag.put(NBT_KEY, nbt);
 		}
@@ -42,18 +42,6 @@ public class ElementalStatsComponent implements ComponentV3, ElementalStats, Aut
 	@Override
 	public NbtCompound getNbtCompound()
 	{
-		if(nbt == null)
-		{
-			nbt = new NbtCompound();
-			populateInnateStats(nbt);
-		}
-
 		return nbt;
-	}
-
-	@Override
-	public void populateInnateStats(NbtCompound nbt)
-	{
-
 	}
 }

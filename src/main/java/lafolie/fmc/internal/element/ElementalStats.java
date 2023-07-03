@@ -53,7 +53,7 @@ public interface ElementalStats
 	 */
 	public NbtCompound getNbtCompound();
 
-	public void populateInnateStats(NbtCompound nbt);
+	// public void populateInnateStats(NbtCompound nbt);
 
 	/**
 	 * Gets the nbt compound for a specific attribute.

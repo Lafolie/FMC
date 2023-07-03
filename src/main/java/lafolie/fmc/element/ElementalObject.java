@@ -184,4 +184,9 @@ public interface ElementalObject
 			stats.modifyElement(element.getResistantTo(), ElementalAttribute.RESISTANCE, (byte)1);
 		}
 	}
+
+	public default boolean hasBeenInitialized()
+	{
+		return !getElementalStats().getNbtCompound().isEmpty();
+	}
 }

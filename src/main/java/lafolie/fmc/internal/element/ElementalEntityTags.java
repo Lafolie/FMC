@@ -110,7 +110,7 @@ public final class ElementalEntityTags
 		
 		for(ElementalAspect element : cache.get(ref))
 		{
-			FMC.LOG.info("Found element {}", element);
+			// FMC.LOG.info("Found element {}", element);
 			//TODO: set amount to configured value
 			obj.modifyElementalAspectNoSync(element, attribute, 1);
 		}
@@ -118,7 +118,7 @@ public final class ElementalEntityTags
 
 	public static void populateElements(Entity entity)
 	{
-		FMC.LOG.info("POPULATING ENTITY {}", entity.toString());
+		// FMC.LOG.info("POPULATING ENTITY {}", entity.toString());
 		RegistryEntry.Reference<EntityType<?>> ref = (RegistryEntry.Reference<EntityType<?>>)Registries.ENTITY_TYPE.getEntry(entity.getType());
 		ElementalObject obj = (ElementalObject)entity;
 
